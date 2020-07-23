@@ -1,0 +1,203 @@
+section[gui="xp"].tabs {
+    menu[role="tablist"] {
+        /*-------------------------------------------*\
+            Buttons
+        \*-------------------------------------------*/
+
+        button {
+            font-family: var(--sans-serif);
+            font-size: 11px;
+            box-sizing: border-box;
+            border: none;
+            background: var(--surface);
+            box-shadow: var(--border-raised-outer), var(--border-raised-inner);
+            border-radius: 0;
+            min-width: 75px;
+            min-height: 23px;
+            padding: 0 12px;
+            &:not(:disabled) {
+                &:active,
+                &.active {
+                    box-shadow: var(--border-sunken-outer), var(--border-sunken-inner);
+                }
+            }
+            &:focus,
+            &.focused {
+                outline: 1px dotted #000000;
+                outline-offset: -4px;
+            }
+            &::-moz-focus-inner {
+                border: 0;
+            }
+        }
+
+
+        /*-------------------------------------------*\
+            Buttons
+        \*-------------------------------------------*/
+
+        button {
+            font-family: var(--sans-serif);
+            -webkit-font-smoothing: antialiased;
+            font-size: 11px;
+            box-sizing: border-box;
+            border: 1px solid #003c74;
+            background: linear-gradient(
+                180deg,
+                rgba(255, 255, 255, 1) 0%,
+                rgba(236, 235, 229, 1) 86%,
+                rgba(216, 208, 196, 1) 100%
+            );
+            box-shadow: none;
+            border-radius: 3px;
+            &:not(:disabled) {
+                &:active,
+                &.active {
+                    box-shadow: none;
+                    background: linear-gradient(
+                        180deg,
+                        rgba(205, 202, 195, 1) 0%,
+                        rgba(227, 227, 219, 1) 8%,
+                        rgba(229, 229, 222, 1) 94%,
+                        rgba(242, 242, 241, 1) 100%
+                    );
+                }
+                &:hover {
+                    box-shadow: inset -1px 1px #fff0cf, inset 1px 2px #fdd889, inset -2px 2px #fbc761, inset 2px -2px #e5a01a;
+                }
+            }
+            &:focus,
+            &.focused {
+                box-shadow: inset -1px 1px #cee7ff, inset 1px 2px #98b8ea, inset -2px 2px #bcd4f6, inset 1px -1px #89ade4,
+                    inset 2px -2px #89ade4;
+            }
+            &::-moz-focus-inner {
+                border: 0;
+            }
+        }
+    }
+}
+
+/*-------------------------------------------*\
+    Tabs
+\*-------------------------------------------*/
+
+:root {
+    --tab-border: 1px solid #888;
+    --tab-bg: var(--surface);
+}
+
+section[gui="xp"].tabs {
+    [role="tabpanel"] {
+        position: relative;
+        z-index: 2;
+    }
+
+    menu[role="tablist"] {
+        position: relative;
+        margin: 0 0 -2px 0;
+        text-indent: 0;
+        list-style-type: none;
+        display: flex;
+        padding-left: 3px;
+
+        button {
+            border-top-left-radius: 3px;
+            border-top-right-radius: 3px;
+            z-index: 1;
+            display: block;
+            color: #222;
+            text-decoration: none;
+            min-width: unset;
+            &[aria-selected="true"] {
+                padding-bottom: 2px;
+                margin-top: -2px;
+                background-color: var(--surface);
+                position: relative;
+                z-index: 8;
+                margin-left: -3px;
+                margin-bottom: 1px;
+            }
+            &:focus {
+                outline: 1px dotted #222;
+                outline-offset: -4px;
+            }
+        }
+        &.justified {
+            button {
+                flex-grow: 1;
+                text-align: center;
+            }
+        }
+    }
+
+    [role="tabpanel"] {
+        padding: 14px;
+        clear: both;
+        background: var(--tab-bg);
+        border: var(--tab-border);
+        position: relative;
+        z-index: 2;
+        margin-bottom: 9px;
+    }
+}
+
+
+/*-------------------------------------------*\
+    Tabs
+\*-------------------------------------------*/
+
+:root {
+    --tab-bg: linear-gradient(180deg, rgba(252, 252, 254, 1) 0%, rgba(244, 243, 238, 1) 100%);
+    --tab-border: 1px solid #919b9c;
+}
+
+section[gui="xp"].tabs {
+    menu[role="tablist"] {
+        button {
+            background: linear-gradient(
+                180deg,
+                rgba(255, 255, 255, 1) 0%,
+                rgba(250, 250, 249, 1) 26%,
+                rgba(240, 240, 234, 1) 95%,
+                rgba(236, 235, 229, 1) 100%
+            );
+            margin-left: -1px;
+            margin-right: 2px;
+            border-radius: 0;
+            border-color: #91a7b4;
+            border-top-right-radius: 3px;
+            border-top-left-radius: 3px;
+            padding: 0 12px 3px;
+            &:hover {
+                box-shadow: unset;
+                border-top: 1px solid #e68b2c;
+                box-shadow: inset 0px 2px #ffc73c;
+            }
+            &[aria-selected="true"] {
+                background: #fcfcfe;
+                border-color: #919b9c;
+                margin-right: -1px;
+                border-bottom: 1px solid transparent;
+                border-top: 1px solid #e68b2c;
+                box-shadow: inset 0px 2px #ffc73c;
+                &:first-of-type {
+                    &::before {
+                        content: "";
+                        display: block;
+                        position: absolute;
+                        z-index: -1;
+                        top: 100%;
+                        left: -1px;
+                        height: 2px;
+                        width: 0;
+                        border-left: var(--tab-border);
+                    }
+                }
+            }
+        }
+    }
+    [role="tabpanel"] {
+        box-shadow: inset 1px 1px #fcfcfe, inset -1px -1px #fcfcfe, 1px 2px 2px 0px rgba(208, 206, 191, 0.75);
+    }
+}

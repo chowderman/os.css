@@ -1,0 +1,54 @@
+/*-------------------------------------------*\
+    Progress Indicator
+\*-------------------------------------------*/
+
+:root {
+    --xp-progress-bar-width: 125px;
+    --xp-progress-bar-height: 8px;
+    --xp-progress-bar-border-radius: 2px;
+    --xp-progress-bar-background-color: #ffffff;
+    --xp-progress-bar-border: 1px solid #686768;
+    --xp-progress-bar-padding: 2px;
+    --xp-progress-bar-box-shadow: inset 0px 0px 1px grey;
+    --xp-progress-bar-background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAB3RJTUUH5AcHABc2pM8GkgAAABl0RVh0Q29tbWVudABDcmVhdGVkIHdpdGggR0lNUFeBDhcAAAA+SURBVAjXY1z9du1/BjQQIhTEwMDAwMBy+ftlBgxJBqjk+W8XGHABlgc/H+KWFGYRxC1pymWGW1KKTRynJAAU3A18Y6k7aQAAAABJRU5ErkJggg==");
+    --xp-progress-bar-background-size: contain;
+    --xp-progress-bar-background-repeat: repeat-x;
+}
+
+/* RESETS */
+progress[gui="xp"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+}
+
+/* IE and EDGE */
+progress[gui="xp"] {
+    width: var(--xp-progress-bar-width);
+    height: var(--xp-progress-bar-height);
+    border-radius: var(--xp-progress-bar-border-radius);
+    background-color: var(--xp-progress-bar-background-color);
+    border: var(--xp-progress-bar-border);
+    padding: var(--xp-progress-bar-padding);
+    box-shadow: var(--xp-progress-bar-box-shadow);
+}
+
+/* WEBKIT BROWSERS - CHROME, OPERA AND SAFARI */
+progress[gui="xp"]::-webkit-progress-bar {
+    background-color: var(--xp-progress-bar-background-color);
+    border-radius: var(--xp-progress-bar-border-radius);
+}
+
+progress[gui="xp"]::-webkit-progress-value {
+    background-image: var(--xp-progress-bar-background-image);
+    background-size: var(--xp-progress-bar-background-size);
+    background-repeat: var(--xp-progress-bar-background-repeat);
+}
+
+/* MOZILLA FIREFOX */
+progress[gui="xp"]::-moz-progress-bar {
+    background-image: var(--xp-progress-bar-background-image);
+    background-size: var(--xp-progress-bar-background-size);
+    background-repeat: var(--xp-progress-bar-background-repeat);
+}

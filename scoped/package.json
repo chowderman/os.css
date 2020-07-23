@@ -1,0 +1,51 @@
+{
+  "name": "os.css",
+  "version": "1.0.0",
+  "description": "Old OS styled CSS",
+  "main": "dist/XP.css",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "build": "node build.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+"
+  },
+  "keywords": [
+    "css",
+    "windows98",
+    "windowsXP",
+    "gui"
+  ],
+  "author": "Chowder Man <chowderman@protonmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
+  "devDependencies": {
+    "chokidar": "^3.3.1",
+    "cssnano": "^4.1.10",
+    "dedent": "^0.7.0",
+    "ejs": "^3.0.2",
+    "gh-pages": "^2.2.0",
+    "glob": "^7.1.6",
+    "highlight.js": "^9.18.1",
+    "live-server": "^1.2.1",
+    "mkdirp": "^1.0.4",
+    "postcss-calc": "^7.0.2",
+    "postcss-copy": "^7.1.0",
+    "postcss-css-variables": "^0.14.0",
+    "postcss-import": "^12.0.1",
+    "postcss-inline": "^1.2.0",
+    "postcss-inline-svg": "^4.1.0",
+    "postcss-nested": "^4.2.1"
+  },
+  "dependencies": {
+    "globby": "^11.0.1",
+    "uglify-es": "^3.3.9",
+    "uglify-js": "^3.10.0"
+  }
+}

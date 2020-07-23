@@ -1,0 +1,62 @@
+/*-------------------------------------------*\
+    Progress Indicator
+\*-------------------------------------------*/
+
+:root {
+    --win-progress-bar-width: 250px;
+    --win-progress-bar-height: 15px;
+    --win-progress-bar-border-radius: 0px;
+    --win-progress-bar-background-color: #c0c0c0;
+    --win-progress-bar-border-top: 1px solid #000000;
+    --win-progress-bar-border-right: 2px solid #ffffff;
+    --win-progress-bar-border-bottom: 2px solid #ffffff;
+    --win-progress-bar-border-left: 1px solid #000000;
+    --win-progress-bar-padding: 2px;
+    --win-progress-bar-box-shadow: 0px -2px 0px #808080, -2px 0px 0px #808080, -2px -2px 0px #808080;
+    --win-progress-bar-background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAOCAYAAAAWo42rAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAB3RJTUUH5AcNFAAkJmcYhAAAABl0RVh0Q29tbWVudABDcmVhdGVkIHdpdGggR0lNUFeBDhcAAAAtSURBVCjPYzxw4MB/BiIACwMDA4ODwwG8ig4ccGBgYiASjCocrApZYHFJCAAAmGcIH2MNGHUAAAAASUVORK5CYII=");
+    --win-progress-bar-background-size: contain;
+    --win-progress-bar-background-repeat: repeat-x;
+    --win-progress-bar-image-rendering: crisp-edges;
+}
+
+/* RESETS */
+progress {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+}
+
+/* IE and EDGE */
+progress {
+    width: var(--win-progress-bar-width);
+    height: var(--win-progress-bar-height);
+    border-radius: var(--win-progress-bar-border-radius);
+    background-color: var(--win-progress-bar-background-color);
+    border-top: var(--win-progress-bar-border-top);
+    border-right: var(--win-progress-bar-border-right);
+    border-bottom: var(--win-progress-bar-border-bottom);
+    border-left: var(--win-progress-bar-border-left);
+    padding: var(--win-progress-bar-padding);
+    box-shadow: var(--win-progress-bar-box-shadow);
+    image-rendering: var(--win-progress-bar-image-rendering);
+}
+
+/* WEBKIT BROWSERS - CHROME, OPERA AND SAFARI */
+progress::-webkit-progress-bar {
+    background-color: var(--win-progress-bar-background-color);
+    border-radius: var(--win-progress-bar-border-radius);
+}
+
+progress::-webkit-progress-value {
+    background-image: var(--win-progress-bar-background-image);
+    background-size: var(--win-progress-bar-background-size);
+    background-repeat: var(--win-progress-bar-background-repeat);
+}
+
+/* MOZILLA FIREFOX */
+progress::-moz-progress-bar {
+    background-image: var(--win-progress-bar-background-image);
+    background-size: var(--win-progress-bar-background-size);
+    background-repeat: var(--win-progress-bar-background-repeat);
+}
