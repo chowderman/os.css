@@ -21,8 +21,8 @@ You can find the usage guides for OS.css here:
 
 To install, simpy download a copy of the CSS files and link them like you would any typical stylesheet. You can also optionally add in the JavaScript file (which will make windows draggable and tabs switchable) and the font files (to add a retro styles font to your widgets):
 
-* XP.css download
-* 98.css download
+* [XP.css download](https://chowderman.github.io/os/xp.css.zip)
+* [98.css download](https://chowderman.github.io/os/98.css.zip)
 
 ```html
 <head>
@@ -42,13 +42,8 @@ To install, simpy download a copy of the CSS files and link them like you would 
     at the end of the body tag to apply.
   -->
 
-  <!-- XP.css -->
     <!-- Optional files -->
-    <script src="XP.js"></script>
-
-  <!-- 98.css -->
-    <!-- Optional files -->
-    <script src="98.js"></script>
+    <script src="os.js"></script>
 </body>
 ```
 
