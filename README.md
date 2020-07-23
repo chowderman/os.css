@@ -13,8 +13,8 @@ OS.css is a fork of XP.css and 98.css. It includes additional widgets, adds the 
 
 You can find the usage guides for OS.css here:
 
-* [Unscoped version of the guide]()
-* [Scoped version of the guide]()
+* [Unscoped version of the guide](https://chowderman.github.io/os/index.html)
+* [Scoped version of the guide](https://chowderman.github.io/os/scoped/index.html)
 
 
 ### Installation
@@ -23,8 +23,6 @@ To install, simpy download a copy of the CSS files and link them like you would 
 
 * XP.css download
 * 98.css download
-* XP.css (scoped) download
-* 98.css (scoped) download
 
 ```html
 <head>
@@ -59,7 +57,7 @@ To install, simpy download a copy of the CSS files and link them like you would 
 To build from source:
 
 ```
-git clone 
+git clone https://github.com/chowderman/os.css.git
 cd os.css
 node build.js
 cd scoped
