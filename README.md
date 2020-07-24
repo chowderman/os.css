@@ -6,7 +6,7 @@
 
 <img alt="a screenshot of a window with the title 'My First Program' and two buttons OK and Cancel, styled like a Windows 98 dialog" src="https://github.com/jdan/98.css/blob/main/docs/window.png?raw=true" height="133">
 
-OS.css is a fork of XP.css and 98.css. It includes additional widgets, adds the ability to make windows draggable, and includes a scoped version of the library so that the default styles of your HTML elements don't get overriden (the scoped versions require an attribute before they apply any styles). Many thanks to [Adam Hammad](https://github.com/botoxparty) and [Jordan Scales](https://github.com/jdan) for making XP.css and 98.css respectivly, you guys rock!
+OS.css is a fork of XP.css and 98.css. It includes additional widgets, adds the ability to make windows draggable, and includes a scoped version of the library so that the default styles of your HTML elements don't get overridden (the scoped versions require an attribute before they apply any styles). Many thanks to [Adam Hammad](https://github.com/botoxparty) and [Jordan Scales](https://github.com/jdan) for making XP.css and 98.css respectively, you guys rock!
 
 
 ### Guide
@@ -19,7 +19,7 @@ You can find the usage guides for OS.css here:
 
 ### Installation
 
-To install, simpy download a copy of the CSS files and link them like you would any typical stylesheet. You can also optionally add in the JavaScript file (which will make windows draggable and tabs switchable) and the font files (to add a retro styles font to your widgets):
+To install, simply download a copy of the CSS files and link them like you would any typical stylesheet. You can also optionally add in the JavaScript file (which will make windows draggable and tabs switchable) and the font files (to add a retro styles font to your widgets):
 
 * [XP.css download](https://chowderman.github.io/os/xp.css.zip)
 * [98.css download](https://chowderman.github.io/os/98.css.zip)
